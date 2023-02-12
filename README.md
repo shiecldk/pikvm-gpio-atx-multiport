@@ -3,6 +3,9 @@ This is a Pi-KVM GPIO implementation for ATX multiport support up to controlling
 
 The implementation is accomplished through adding the addtional GPIO pins to the Pi-KVM Web GUI under /etc/kvmd/override.yaml.
 
+<p>
+<img src="https://raw.githubusercontent.com/shiecldk/pikvm-gpio-atx-multiport/main/images/kvm-atx-menu.png" alt="kvm-atx-menu" class="center"></p>
+
 ## Hardware Requirements
 Make sure you have the 3 hardwares to make the KVM switch work:
 
@@ -46,7 +49,8 @@ Restart the kvmd service:<br>
 ### Pi-KVM V2 Diagram
 Take a reference of the pin mapping for \_PWRSW\_, \_RESET\_, and \_PLED\_ from the Pi-KVM V2 guide to setup your own breakoutboard for ATX switch.
 
-![](https://raw.githubusercontent.com/pikvm/pikvm/master/img/v2.png)
+<p>
+<img src="https://raw.githubusercontent.com/pikvm/pikvm/master/img/v2.png" alt="v2" class="center"></p>
 
 ### GPIO Mapping
 The following GPIO pins are used for controlling 4 PCs:
@@ -62,6 +66,8 @@ PC4 | GPIO #20 | GPIO #26 | GPIO #21
 ### Raspberry Pi 4 GPIO Pins
 <p>
 <img src="https://raw.githubusercontent.com/shiecldk/pikvm-gpio-atx-multiport/main/images/rpi4b-pins.png" alt="rpi4b-pins" class="center"></p>
+
+Source: [https://linuxhint.com/gpio-pinout-raspberry-pi/](https://linuxhint.com/gpio-pinout-raspberry-pi/)
 
 ## Limitation
 Due to the limitation with number of the available GPIO ports on Pi-KVM V2, HDD Leds are not available on the Web GUI. Follwoing the Pin Mapping section, if you find out additional GPIO ports that can be used for PC2 - PC4, feel free to let me know.
