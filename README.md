@@ -70,7 +70,7 @@ PC4 | GPIO #20 | GPIO #26 | GPIO #21
 Source: [https://linuxhint.com/gpio-pinout-raspberry-pi/](https://linuxhint.com/gpio-pinout-raspberry-pi/)
 
 ## Limitation
-Due to the limitation with number of the available GPIO ports on Pi-KVM V2, HDD Leds are not available on the Web GUI. Follwoing the Pin Mapping section, if you find out additional GPIO ports that can be used for PC2 - PC4, feel free to let me know.
+Due to the limitation with number of the available GPIO ports on Pi-KVM V2, HDD Leds are not available on the Web GUI. Following the Pin Mapping section, if you find out additional GPIO pins that can be used for PC2 - PC4, feel free to let me know.
 
 ## Credits
 * The [Pi-KVM project](https://github.com/pikvm/pikvm).
