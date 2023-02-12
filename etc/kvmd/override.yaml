@@ -154,7 +154,7 @@ kvmd:
                 pin: 25
                 mode: input
             ch2_power_led:
-                pin: 12
+                pin: 13
                 mode: input
             ch3_power_led:
                 pin: 21

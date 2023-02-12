@@ -44,7 +44,6 @@ Set the OS back to read-only mode:<br>
 Restart the kvmd service:<br>
 `systemctl restart kvmd`<br>
 
-
 ## Pin Mapping
 ### Pi-KVM V2 Diagram
 Take a reference of the pin mapping for \_PWRSW\_, \_RESET\_, and \_PLED\_ from the Pi-KVM V2 guide to setup your own breakoutboard for ATX switch.
@@ -59,16 +58,15 @@ PCs | \_PWRSW\_ Pin | \_RESET\_ Pin | \_PLED\_ Pin
 --- | --- | --- | ---
 PC1 | GPIO #23 | GPIO #27 | GPIO #24
 PC2 | GPIO #18 | GPIO #17 | GPIO #25
-PC3 | GPIO #16 | GPIO #19 | GPIO #12
+PC3 | GPIO #16 | GPIO #19 | GPIO #13
 PC4 | GPIO #20 | GPIO #26 | GPIO #21
 
 ## Reference
-### Raspberry Pi 4 GPIO Pins
+### Raspberry Pi 4 Pins
 <p>
 <img src="https://raw.githubusercontent.com/shiecldk/pikvm-gpio-atx-multiport/main/images/rpi4b-pins.png" alt="rpi4b-pins" class="center"></p>
 
 Source: [https://linuxhint.com/gpio-pinout-raspberry-pi/](https://linuxhint.com/gpio-pinout-raspberry-pi/)
-
 
 ### GPIO Pinout in Pi-KVM V3 
 This reference is derived from the [Pi-KVM V3 doc](https://docs.pikvm.org/v3/#io-ports-and-jumpers). However, this project is based on Pi-KVM V2; only take this as a reference to check the available GPIO pins and disable some pikvm service if needed.
@@ -115,5 +113,5 @@ This reference is derived from the [Pi-KVM V3 doc](https://docs.pikvm.org/v3/#io
 Due to the limitation with number of the available GPIO ports on Pi-KVM V2, HDD Leds are not available on the Web GUI. Following the Pin Mapping section, if you find out additional GPIO pins that can be used for PC2-PC4, feel free to let me know.
 
 ## Credits
-* The [Pi-KVM project](https://github.com/pikvm/pikvm).
-* zappanaut's [pikvm-usb-atx-ctrl repo](https://github.com/zappanaut/pikvm-usb-atx-ctrl) that inspired this project.
+* The [Pi-KVM](https://github.com/pikvm/pikvm) project.
+* zappanaut's [pikvm-usb-atx-ctrl](https://github.com/zappanaut/pikvm-usb-atx-ctrl) repo that inspired this project.
