@@ -1,0 +1,170 @@
+####################################################################
+#                                                                  #
+# Override Pi-KVM system settings. This file uses the YAML syntax. #
+#                                                                  #
+#    https://github.com/pikvm/pikvm/blob/master/pages/config.md    #
+#                                                                  #
+# All overridden parameters will be applied AFTER other configs    #
+# and "!include" directives and BEFORE validation.                 #
+# Not: Sections should be combined under shared keys.              #
+#                                                                  #
+####################################################################
+#
+#########
+# Wrong #
+#########
+#kvmd:
+#    gpio:
+#        drivers: ...
+#kvmd:
+#    gpio:
+#        scheme: ...
+#
+###########
+# Correct #
+###########
+#kvmd:
+#    gpio:
+#        drivers: ...
+#        scheme: ...
+#
+###########
+# Example #
+###########
+#vnc:
+#    # See https://github.com/pikvm/pikvm/blob/master/pages/vnc.md
+#    keymap: /usr/share/kvmd/keymaps/ru # Set russian keymap
+#    auth:
+#        vncauth:
+#            enabled: true # Enable auth via /etc/kvmd/vncpasswd
+
+kvmd:
+    atx:
+        type: disabled
+    gpio:
+        drivers:
+            hk:
+                type: xh_hk4401
+                device: /dev/ttyAMA0
+        scheme:
+            ch0_led:
+                driver: hk
+                pin: 0
+                mode: input
+            ch1_led:
+                driver: hk
+                pin: 1
+                mode: input
+            ch2_led:
+                driver: hk
+                pin: 2
+                mode: input
+            ch3_led:
+                driver: hk
+                pin: 3
+                mode: input
+            ch0_button:
+                driver: hk
+                pin: 0
+                mode: output
+                switch: false
+            ch1_button:
+                driver: hk
+                pin: 1
+                mode: output
+                switch: false
+            ch2_button:
+                driver: hk
+                pin: 2
+                mode: output
+                switch: false
+            ch3_button:
+                driver: hk
+                pin: 3
+                mode: output
+                switch: false
+            ch0_Reset:
+                pin: 27
+                mode: output
+                switch: false
+            ch1_Reset:
+                pin: 17
+                mode: output
+                switch: false
+            ch2_Reset:
+                pin: 19
+                mode: output
+                switch: false
+            ch3_Reset:
+                pin: 26
+                mode: output
+                switch: false
+            ch0_Power_Short:
+                pin: 23
+                mode: output
+                switch: false
+            ch0_Power_Long:
+                pin: 23 # same as Power_Short
+                mode: output
+                switch: false
+                pulse: 
+                    delay: 2.5
+                    min-delay: 2.0
+                    max_delay: 3.0
+            ch1_Power_Short:
+                pin: 18
+                mode: output
+                switch: false
+            ch1_Power_Long:
+                pin: 18 # same as Power_Short
+                mode: output
+                switch: false
+                pulse: 
+                    delay: 2.5
+                    min-delay: 2.0
+                    max_delay: 3.0
+            ch2_Power_Short:
+                pin: 16
+                mode: output
+                switch: false
+            ch2_Power_Long:
+                pin: 16 # same as Power_Short
+                mode: output
+                switch: false
+                pulse: 
+                    delay: 2.5
+                    min-delay: 2.0
+                    max_delay: 3.0
+            ch3_Power_Short:
+                pin: 20
+                mode: output
+                switch: false
+            ch3_Power_Long:
+                pin: 20 # same as Power_Short
+                mode: output
+                switch: false
+                pulse: 
+                    delay: 2.5
+                    min-delay: 2.0
+                    max_delay: 3.0
+            ch0_power_led:
+                pin: 24
+                mode: input
+            ch1_power_led:
+                pin: 25
+                mode: input
+            ch2_power_led:
+                pin: 12
+                mode: input
+            ch3_power_led:
+                pin: 21
+                mode: input
+        view:
+            header:
+                title: '<img class="led-gray" src="/share/svg/kvm.svg" title=""><span>KVM & ATX</span>'
+            table:
+                - ['#', '#<div class="pos-rel"><span class="pos-abs-middle">KVM-Switch</span></div>', '#<span class="padding-x-1">NAME</span>', "#PWR", "#&nbsp;", '#<div class="pos-rel"><span class="pos-abs-middle">ATX Power and Reset</span></div>']
+                - ['ch0_led|red', 'ch0_button||Port 1', '#<span class="x-name">PC1</span>', 'ch0_power_led|green', '#', 'ch0_Power_Short|confirm|Power <sup><i>short</i></sup>', 'ch0_Power_Long|confirm|Power <sup><i>long</i></sup>', 'ch0_Reset|confirm|Reset']
+                - ['ch1_led|red', 'ch1_button||Port 2', '#<span class="x-name">PC2</span>', 'ch1_power_led|green', '#', 'ch1_Power_Short|confirm|Power <sup><i>short</i></sup>', 'ch1_Power_Long|confirm|Power <sup><i>long</i></sup>', 'ch1_Reset|confirm|Reset']
+                - ['ch2_led|red', 'ch2_button||Port 3', '#<span class="x-name">PC3</span>', 'ch2_power_led|green', '#', 'ch2_Power_Short|confirm|Power <sup><i>short</i></sup>', 'ch2_Power_Long|confirm|Power <sup><i>long</i></sup>', 'ch2_Reset|confirm|Reset']
+                - ['ch3_led|red', 'ch3_button||Port 4', '#<span class="x-name">PC4</span>', 'ch3_power_led|green', '#', 'ch3_Power_Short|confirm|Power <sup><i>short</i></sup>', 'ch3_Power_Long|confirm|Power <sup><i>long</i></sup>', 'ch3_Reset|confirm|Reset']
