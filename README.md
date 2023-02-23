@@ -27,8 +27,8 @@ Obtain the root permission:<br>
 Set to read-write mode:<br>
 `rw`<br>
 
-Go to the /etc/kvdm directory:<br>
-`cd /etc/kvdm`<br>
+Go to the /etc/kvmd directory:<br>
+`cd /etc/kvmd`<br>
 
 Make backup of override.yaml and web.css:<br>
 `cp override.yaml override.yaml.bak`<br>
