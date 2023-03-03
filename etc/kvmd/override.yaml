@@ -47,19 +47,19 @@ kvmd:
                 type: xh_hk4401
                 device: /dev/ttyAMA0
         scheme:
-            ch0_led:
+            ch0_port_active_led:
                 driver: hk
                 pin: 0
                 mode: input
-            ch1_led:
+            ch1_port_active_led:
                 driver: hk
                 pin: 1
                 mode: input
-            ch2_led:
+            ch2_port_active_led:
                 driver: hk
                 pin: 2
                 mode: input
-            ch3_led:
+            ch3_port_active_led:
                 driver: hk
                 pin: 3
                 mode: input
