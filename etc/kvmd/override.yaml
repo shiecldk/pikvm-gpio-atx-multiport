@@ -108,9 +108,9 @@ kvmd:
                 mode: output
                 switch: false
                 pulse: 
-                    delay: 2.5
-                    min-delay: 2.0
-                    max_delay: 3.0
+                    delay: 4.5
+                    min-delay: 4.0
+                    max_delay: 5.0
             ch1_Power_Short:
                 pin: 18
                 mode: output
@@ -120,9 +120,9 @@ kvmd:
                 mode: output
                 switch: false
                 pulse: 
-                    delay: 2.5
-                    min-delay: 2.0
-                    max_delay: 3.0
+                    delay: 4.5
+                    min-delay: 4.0
+                    max_delay: 5.0
             ch2_Power_Short:
                 pin: 16
                 mode: output
@@ -132,9 +132,9 @@ kvmd:
                 mode: output
                 switch: false
                 pulse: 
-                    delay: 2.5
-                    min-delay: 2.0
-                    max_delay: 3.0
+                    delay: 4.5
+                    min-delay: 4.0
+                    max_delay: 5.0
             ch3_Power_Short:
                 pin: 20
                 mode: output
@@ -144,9 +144,9 @@ kvmd:
                 mode: output
                 switch: false
                 pulse: 
-                    delay: 2.5
-                    min-delay: 2.0
-                    max_delay: 3.0
+                    delay: 4.5
+                    min-delay: 4.0
+                    max_delay: 5.0
             ch0_power_led:
                 pin: 24
                 mode: input
