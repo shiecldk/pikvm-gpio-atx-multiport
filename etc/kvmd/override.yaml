@@ -63,84 +63,84 @@ kvmd:
                 driver: hk
                 pin: 3
                 mode: input
-            ch0_button:
+            ch0_kvm_button:
                 driver: hk
                 pin: 0
                 mode: output
                 switch: false
-            ch1_button:
+            ch1_kvm_button:
                 driver: hk
                 pin: 1
                 mode: output
                 switch: false
-            ch2_button:
+            ch2_kvm_button:
                 driver: hk
                 pin: 2
                 mode: output
                 switch: false
-            ch3_button:
+            ch3_kvm_button:
                 driver: hk
                 pin: 3
                 mode: output
                 switch: false
-            ch0_Reset:
+            ch0_reset_button:
                 pin: 27
                 mode: output
                 switch: false
-            ch1_Reset:
+            ch1_reset_button:
                 pin: 17
                 mode: output
                 switch: false
-            ch2_Reset:
+            ch2_reset_button:
                 pin: 19
                 mode: output
                 switch: false
-            ch3_Reset:
+            ch3_reset_button:
                 pin: 26
                 mode: output
                 switch: false
-            ch0_Power_Short:
+            ch0_power_button:
                 pin: 23
                 mode: output
                 switch: false
-            ch0_Power_Long:
-                pin: 23 # same as Power_Short
+            ch0_power_button_long:
+                pin: 23 # same as power_button
                 mode: output
                 switch: false
                 pulse: 
                     delay: 4.5
                     min-delay: 4.0
                     max_delay: 5.0
-            ch1_Power_Short:
+            ch1_power_button:
                 pin: 18
                 mode: output
                 switch: false
-            ch1_Power_Long:
-                pin: 18 # same as Power_Short
+            ch1_power_button_long:
+                pin: 18 # same as power_button
                 mode: output
                 switch: false
                 pulse: 
                     delay: 4.5
                     min-delay: 4.0
                     max_delay: 5.0
-            ch2_Power_Short:
+            ch2_power_button:
                 pin: 16
                 mode: output
                 switch: false
-            ch2_Power_Long:
-                pin: 16 # same as Power_Short
+            ch2_power_button_long:
+                pin: 16 # same as power_button
                 mode: output
                 switch: false
                 pulse: 
                     delay: 4.5
                     min-delay: 4.0
                     max_delay: 5.0
-            ch3_Power_Short:
+            ch3_power_button:
                 pin: 20
                 mode: output
                 switch: false
-            ch3_Power_Long:
-                pin: 20 # same as Power_Short
+            ch3_power_button_long:
+                pin: 20 # same as power_button
                 mode: output
                 switch: false
                 pulse: 
@@ -164,7 +164,7 @@ kvmd:
                 title: '<img class="led-gray" src="/share/svg/kvm.svg" title=""><span>KVM & ATX</span>'
             table:
                 - ['#', '#<div class="pos-rel"><span class="pos-abs-middle">KVM-Switch</span></div>', '#<span class="padding-x-1">NAME</span>', "#PWR", "#&nbsp;", '#<div class="pos-rel"><span class="pos-abs-middle">ATX Power and Reset</span></div>']
-                - ['ch0_led|red', 'ch0_button||Port 1', '#<span class="x-name">PC1</span>', 'ch0_power_led|green', '#', 'ch0_Power_Short|confirm|Power <sup><i>short</i></sup>', 'ch0_Power_Long|confirm|Power <sup><i>long</i></sup>', 'ch0_Reset|confirm|Reset']
-                - ['ch1_led|red', 'ch1_button||Port 2', '#<span class="x-name">PC2</span>', 'ch1_power_led|green', '#', 'ch1_Power_Short|confirm|Power <sup><i>short</i></sup>', 'ch1_Power_Long|confirm|Power <sup><i>long</i></sup>', 'ch1_Reset|confirm|Reset']
-                - ['ch2_led|red', 'ch2_button||Port 3', '#<span class="x-name">PC3</span>', 'ch2_power_led|green', '#', 'ch2_Power_Short|confirm|Power <sup><i>short</i></sup>', 'ch2_Power_Long|confirm|Power <sup><i>long</i></sup>', 'ch2_Reset|confirm|Reset']
-                - ['ch3_led|red', 'ch3_button||Port 4', '#<span class="x-name">PC4</span>', 'ch3_power_led|green', '#', 'ch3_Power_Short|confirm|Power <sup><i>short</i></sup>', 'ch3_Power_Long|confirm|Power <sup><i>long</i></sup>', 'ch3_Reset|confirm|Reset']
+                - ['ch0_port_active_led|red', 'ch0_kvm_button||Port 1', '#<span class="x-name">PC1</span>', 'ch0_power_led|green', '#', 'ch0_power_button|confirm|Power <sup><i>short</i></sup>', 'ch0_power_button_long|confirm|Power <sup><i>long</i></sup>', 'ch0_reset_button|confirm|Reset']
+                - ['ch1_port_active_led|red', 'ch1_kvm_button||Port 2', '#<span class="x-name">PC2</span>', 'ch1_power_led|green', '#', 'ch1_power_button|confirm|Power <sup><i>short</i></sup>', 'ch1_power_button_long|confirm|Power <sup><i>long</i></sup>', 'ch1_reset_button|confirm|Reset']
+                - ['ch2_port_active_led|red', 'ch2_kvm_button||Port 3', '#<span class="x-name">PC3</span>', 'ch2_power_led|green', '#', 'ch2_power_button|confirm|Power <sup><i>short</i></sup>', 'ch2_power_button_long|confirm|Power <sup><i>long</i></sup>', 'ch2_reset_button|confirm|Reset']
+                - ['ch3_port_active_led|red', 'ch3_kvm_button||Port 4', '#<span class="x-name">PC4</span>', 'ch3_power_led|green', '#', 'ch3_power_button|confirm|Power <sup><i>short</i></sup>', 'ch3_power_button_long|confirm|Power <sup><i>long</i></sup>', 'ch3_reset_button|confirm|Reset']
