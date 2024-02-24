@@ -77,7 +77,7 @@ PC4 | GPIO #20 | GPIO #26 | GPIO #21
 
 Source: [https://linuxhint.com/gpio-pinout-raspberry-pi/](https://linuxhint.com/gpio-pinout-raspberry-pi/)
 
-### GPIO Pinout in Pi-KVM V3 
+### GPIO Pinout in Pi-KVM V3
 This reference is derived from the [Pi-KVM V3 doc](https://docs.pikvm.org/v3/#io-ports-and-jumpers). However, this project is based on Pi-KVM V2; only take this as a reference to check the available GPIO pins and disable some pikvm service if needed.
 
 <details class="note">
