@@ -2,7 +2,7 @@
 
 This is a Pi-KVM GPIO implementation for ATX multiport support up to controlling 4 PC ports with the [XH-HK4401 4-port HDMI USB KVM Switch](https://docs.pikvm.org/xh_hk4401/) and a custom breakoutboard for ATX switch. The project is based on Pi-KVM V2. If you are using Pi-KVM V3, you would need to make adaptations for GPIO pins based on the Pin Mapping and Reference sections.
 
-The implementation is accomplished through adding the additional GPIO pins to the Pi-KVM Web GUI under /etc/kvmd/override.yaml.
+The implementation is accomplished through adding the additional GPIO pins to the Pi-KVM Web GUI under `/etc/kvmd/override.yaml`.
 
 <p>
 <img src="https://raw.githubusercontent.com/shiecldk/pikvm-gpio-atx-multiport/main/images/kvm-atx-menu.png" alt="kvm-atx-menu" class="center"></p>
