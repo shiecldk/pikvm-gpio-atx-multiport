@@ -1,7 +1,7 @@
 # pikvm-gpio-atx-multiport
 This is a Pi-KVM GPIO implementation for ATX multiport support up to controlling 4 PC ports with the [XH-HK4401 4-port HDMI USB KVM Switch](https://docs.pikvm.org/xh_hk4401/) and a custom breakoutboard for ATX switch. The project is based on Pi-KVM V2. If you are using Pi-KVM V3, you would need to make adaptations for GPIO pins based on the Pin Mapping and Reference sections.
 
-The implementation is accomplished through adding the addtional GPIO pins to the Pi-KVM Web GUI under /etc/kvmd/override.yaml.
+The implementation is accomplished through adding the additional GPIO pins to the Pi-KVM Web GUI under /etc/kvmd/override.yaml.
 
 <p>
 <img src="https://raw.githubusercontent.com/shiecldk/pikvm-gpio-atx-multiport/main/images/kvm-atx-menu.png" alt="kvm-atx-menu" class="center"></p>
@@ -83,7 +83,7 @@ This reference is derived from the [Pi-KVM V3 doc](https://docs.pikvm.org/v3/#io
 <details class="note">
 <summary>GPIO pinout</summary>
 <div class="admonition warning">
-<p class="admonition-title">Before proceeding, make sure that the mb you are using has normal ATX headers</p>
+<p class="admonition-title">Before proceeding, make sure that the motherboard you are using has normal ATX headers</p>
 </div>
 <ul>
 <li><strong>ATX control</strong></li>
@@ -119,7 +119,7 @@ This reference is derived from the [Pi-KVM V3 doc](https://docs.pikvm.org/v3/#io
 </details>
 
 ## Limitation
-Due to the limitation with number of the available GPIO ports on Pi-KVM V2, HDD Leds are not available on the Web GUI. Following the Pin Mapping section, if you find out additional GPIO pins that can be used for PC2-PC4, feel free to let me know.
+Due to the limitation with number of the available GPIO ports on Pi-KVM V2, HDD LEDs are not available on the Web GUI. Following the Pin Mapping section, if you find out additional GPIO pins that can be used for PC2-PC4, feel free to let me know.
 
 ## Credits
 * The [Pi-KVM](https://github.com/pikvm/pikvm) project.
