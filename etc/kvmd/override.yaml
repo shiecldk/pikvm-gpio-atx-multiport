@@ -2,7 +2,7 @@
 #                                                                  #
 # Override Pi-KVM system settings. This file uses the YAML syntax. #
 #                                                                  #
-#    https://github.com/pikvm/pikvm/blob/master/pages/config.md    #
+#      https://docs.pikvm.org/first_steps/#configuring-pikvm       #
 #                                                                  #
 # All overridden parameters will be applied AFTER other configs    #
 # and "!include" directives and BEFORE validation.                 #
@@ -32,7 +32,7 @@
 # Example #
 ###########
 #vnc:
-#    # See https://github.com/pikvm/pikvm/blob/master/pages/vnc.md
+#    # See https://docs.pikvm.org/vnc/
 #    keymap: /usr/share/kvmd/keymaps/ru # Set russian keymap
 #    auth:
 #        vncauth:
