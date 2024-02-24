@@ -62,7 +62,7 @@ Restart the kvmd service:<br>
 
 ### Pi-KVM V2 Diagram
 
-Take a reference of the pin mapping for `_PWRSW_`, `_RESET_`, and `_PLED_` from the Pi-KVM V2 guide to setup your own breakoutboard for ATX switch.
+Take a reference of the pin mapping for `_PWRSW_`, `_RESET_`, and `_PLED_` from the [Pi-KVM V2 guide to setup your own breakoutboard for ATX switch](https://docs.pikvm.org/v2/#setting-up-the-hardware).
 
 <p>
 <img src="https://raw.githubusercontent.com/pikvm/pikvm/bb255f5d3008020044860258663ec6914ebb6ed4/img/v2.png" alt="v2" class="center"></p>
