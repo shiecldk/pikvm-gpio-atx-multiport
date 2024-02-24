@@ -58,7 +58,7 @@ Restart the kvmd service:<br>
 Take a reference of the pin mapping for \_PWRSW\_, \_RESET\_, and \_PLED\_ from the Pi-KVM V2 guide to setup your own breakoutboard for ATX switch.
 
 <p>
-<img src="https://raw.githubusercontent.com/pikvm/pikvm/master/img/v2.png" alt="v2" class="center"></p>
+<img src="https://raw.githubusercontent.com/pikvm/pikvm/bb255f5d3008020044860258663ec6914ebb6ed4/img/v2.png" alt="v2" class="center"></p>
 
 ### GPIO Mapping
 The following GPIO pins are used for controlling 4 PCs:
