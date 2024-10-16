@@ -27,6 +27,15 @@ Obtain the root permission:<br>
 Set to read-write mode:<br>
 `rw`<br>
 
+Go to the /boot directory:<br>
+`cd /boot`<br>
+
+Make backup of cmdline.txt:<br>
+`cp cmdline.txt cmdline.txt.bak`<br>
+
+Remove the console=serial0,115200 parameter from /boot/cmdline.txt:<br>
+`nano cmdline.txt`<br>
+
 Go to the /etc/kvmd directory:<br>
 `cd /etc/kvmd`<br>
 

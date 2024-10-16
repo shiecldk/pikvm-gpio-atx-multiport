@@ -1,0 +1,1 @@
+root=LABEL=PIROOT ro rootwait console=tty1 fsck.repair=yes audit=0
