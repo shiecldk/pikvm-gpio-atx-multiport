@@ -108,7 +108,7 @@ kvmd:
                 pin: 23 # same as power_button
                 mode: output
                 switch: false
-                pulse: 
+                pulse:
                     delay: 4.5
                     min-delay: 4.0
                     max_delay: 5.0
@@ -120,7 +120,7 @@ kvmd:
                 pin: 18 # same as power_button
                 mode: output
                 switch: false
-                pulse: 
+                pulse:
                     delay: 4.5
                     min-delay: 4.0
                     max_delay: 5.0
@@ -132,7 +132,7 @@ kvmd:
                 pin: 16 # same as power_button
                 mode: output
                 switch: false
-                pulse: 
+                pulse:
                     delay: 4.5
                     min-delay: 4.0
                     max_delay: 5.0
@@ -144,7 +144,7 @@ kvmd:
                 pin: 20 # same as power_button
                 mode: output
                 switch: false
-                pulse: 
+                pulse:
                     delay: 4.5
                     min-delay: 4.0
                     max_delay: 5.0
